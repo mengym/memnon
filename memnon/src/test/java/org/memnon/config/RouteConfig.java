@@ -6,9 +6,10 @@ import org.memnon.route.AbstractRouteConfig;
 
 public class RouteConfig extends AbstractRouteConfig {
     public void init(AppContext appContext) {
-        route("/abc").to(HelloController.class).action("hello");
+        route("/hello").to(HelloController.class).action("hello");
+        route("/{action}/{controller}/{id}");
+        route("/package/package/{action}/{controller}/{id}");
 //        route("/search").to(SearchController.class);
-//        route("/{action}/{controller}/{id}");
 //        route("/abc/xxx/123").to().action("");
 //        route("/{action}/greeting/{name}").to(HelloController.class);
     }

@@ -1,6 +1,7 @@
 package org.memnon.config;
 
 import org.memnon.context.AppContext;
+import org.memnon.controllers.HelloController;
 import org.memnon.filter.TimingFilter;
 import org.memnon.route.AbstractControllerConfig;
 
@@ -10,5 +11,6 @@ import org.memnon.route.AbstractControllerConfig;
 public class AppControllerConfig extends AbstractControllerConfig {
     public void init(AppContext context) {
         addGlobalFilters(new TimingFilter());
+        add(new TimingFilter()).to(HelloController.class).forActions("hello");
     }
 }
