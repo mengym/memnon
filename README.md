@@ -8,6 +8,10 @@ Memnon is a Java Process framework inspired by Ruby on Rails. It is optimized to
 * __simple__: simple configuration is required to develop Business Process applications, and some conventions are overridable.
 
 ## 5 minutes to understand Memnon
+	
+* __see__ memnon/memnon/src/test/  demo.
+
+* __Main class__ is org.memnon.server.Server
 
 ## Documentation
 
